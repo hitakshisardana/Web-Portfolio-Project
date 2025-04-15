@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hitakshi's Portfolio</title>
-    <link rel="stylesheet" href="styles.css"/>
+  <title>Hitakshi's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
-    <navbar class="nav">
+    <nav class="nav">
       <ul>
-        <li><h3 href="#home">Home</h3></li>
-        <li><h3 href="#about">About</h3></li>
-        <li><h3 href="#portfolio">Portfolio</h3></li>
-        <li><h3 href="#contact">Contact</h3></li>
+        <li><a href="#home"><h2>HOME</h2></a></li>
+        <li><a href="#about"><h2>ABOUT</h2></a></li>
+        <li><a href="#skills"><h2>SKILLS</h2></a></li>
+        <li><a href="#contact"><h2>CONTACT</h2></a></li>
       </ul>
-    </navbar>
+    </nav>
   </header>
 
   <main>
-    <section id="home" class="section">
-      <h2>Welcome</h2>
-      <p>This is a personal portfolio homepage.</p>
+    <section id="home" class="section home-section">
+      <div class="home-content">
+        <img src="profilepic.jpg" alt="Profile Picture" class="home-profile-pic">
+        <div class="home-text">
+          <h1>Hitakshi Sardana</h1>
+          <p>Web Developer & Technology Enthusiast</p>
+          <p>
+            A curious techie, passionate about coding, problem-solving, and bringing ideas to life through clean, creative web solutions. <br><br>
+            Always learning, always building.
+          </p>
+        </div>
+      </div>
     </section>
-
+    
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>Short bio and background info.</p>
+      <h2>About Me</h2><br>
+      <p>
+        Hey, I’m Hitakshi! I’m currently studying Computer Science at VIT Vellore, diving deep into Artificial Intelligence and Machine Learning. I’ve always been curious about how things work—especially when it comes to tech. That curiosity turned into passion the day I built my first program… and crashed it five times before it worked!
+      </p>
+      <p>
+        <br>I love creating things that are useful and meaningful. Whether it’s designing clean, responsive websites or figuring out how to make an algorithm smarter, the problem-solving process excites me. I'm also a bit of a multitasker—I’ve been involved in everything from organizing tech events as Co-Secretary of SIAM-VIT to writing for our student newsletter.
+      </p>
+      <p>
+        <br>Working on real projects and leading teams has taught me way more than textbooks ever could. I’ve learned to stay calm under pressure, listen better, and genuinely enjoy collaborating with people.
+      </p>
+      <p>
+        <br>When I’m not coding or running events, you’ll probably find me exploring new tools, rewatching sci-fi movies, or jotting down random ideas for passion projects. I don’t have it all figured out yet, but I’m excited to keep learning, building, and growing—one line of code at a time.
+      </p><br>
+      <a href="HitakshiSardana_Resume.pdf" download class="download-btn">Download Resume</a>
+      <a href="cv.pdf" download class="download-btn">Download CV</a>
     </section>
-
-    <section id="portfolio" class="section">
-      <h2>Projects</h2>
-      <p>Some featured works and case studies.</p>
+    
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">SQL</div>
+      </div>
     </section>
-
+    
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Get in touch via form or email.</p>
+      <div class="social-links">
+        <h2>Contact Me</h2><br>
+        <a href="https://www.linkedin.com/in/hitakshi-sardana-61a79928a" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/hitakshisardana" target="_blank">
+          <img src="git.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/hitakshisardana/" target="_blank">
+          <img src="insta.png" alt="Instagram">
+        </a>
+      </div>
+    </section>
+    
+    <section id="contact-form" class="section">
+      <h2>Get in Touch</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="6" maxlength="1000" required></textarea>
+        <div id="wordCount">0 / 1000</div>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
-  
+
+  <footer class="footer"></footer>
+
   <script src="script.js"></script>
 </body>
 </html>
